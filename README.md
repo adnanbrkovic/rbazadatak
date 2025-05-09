@@ -12,7 +12,7 @@ http://localhost:9000/
 
 
 H2 konzola
-http://localhost:8080/
+http://localhost:8080/h2-console/
 
 
 Swagger:
