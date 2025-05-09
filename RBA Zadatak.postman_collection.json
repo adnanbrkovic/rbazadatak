@@ -1,0 +1,139 @@
+{
+	"info": {
+		"_postman_id": "0782125c-9f93-4652-94b6-75c9ad65573b",
+		"name": "RBA Zadatak",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "findByOib",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/client/find/11111111111",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"client",
+						"find",
+						"11111111111"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "newCardRequest",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"firstName\": \"Ime5\",\n  \"lastName\": \"Prezime5\",\n  \"status\": \"APPROVED\",\n  \"oib\": \"55555555\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/v1/card-request",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"card-request"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "findAll",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/client/findAll",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"client",
+						"findAll"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "deleteByOib",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/client/delete/55555555",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"client",
+						"delete",
+						"55555555"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "sendToKafka",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n        \"id\": 1,\n        \"ime\": \"Ime1\",\n        \"prezime\": \"Prezime1\",\n        \"oib\": \"11111111111\",\n        \"statusKartice\": \"PENDING\"\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/client/findAll",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"client",
+						"findAll"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

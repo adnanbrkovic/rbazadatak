@@ -14,5 +14,7 @@ public interface ClientService {
 
     void deleteByOib(String oib);
 
+    void sendClientToKafka(Client client);
+
 
 }

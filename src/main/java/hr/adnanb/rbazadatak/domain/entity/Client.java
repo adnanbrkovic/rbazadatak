@@ -17,6 +17,7 @@ public class Client {
 
     private String ime;
     private String prezime;
+    @Column(unique = true)
     private String oib;
     @Enumerated(EnumType.STRING)
     @Column(name = "status_kartice")

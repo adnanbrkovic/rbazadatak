@@ -10,7 +10,7 @@
 
     <!-- Definiraj Logger za logiranje -->
     <Loggers>
-        <Root level="info">
+        <Root level="debug">
             <AppenderRef ref="Console"/>
         </Root>
     </Loggers>
